@@ -1,0 +1,100 @@
+:root {
+    --primary-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.card {
+    max-height: 50rem;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 2px 7px 15px 2px var(--dark-blue);
+    text-align: center;
+}
+
+.card_inner {
+    padding: 2rem;
+}
+
+.plan-div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 15px;
+    background: var(--pale-blue);
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+.plan_text {
+    margin: auto;
+    text-align: left;
+    width: 100%;
+}
+
+.plan_cta {
+    text-decoration: underline var(--bright-blue);
+    color: var(--bright-blue);
+    font-weight: 700;
+
+}
+
+.payment-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment_proceed {
+    background: var(--bright-blue);
+    color: var(--primary-blue);
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 2px 5px 15px 1px var(--dark-blue);
+
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.payment_proceed:hover {
+    box-shadow: 2px 5px 15px 5px var(--dark-blue);
+
+}
+
+.payment_cancel {
+    font-weight: 700;
+    opacity: .8;
+}
+
